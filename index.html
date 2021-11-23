@@ -63,7 +63,7 @@
         <div class="container container-flex-hero">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
 
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- benefits -->
@@ -135,17 +135,20 @@
           <h2 class="benefits">Чем мы занимаемся</h2>
           <ul class="listbenefits">
             <li class="listofbebefits">
+              <div class="benefits-overflow"><p class="pbenefits">Мобильные приложения</p></div>
               <img
                 src="images/box2.jpg"
                 alt="подбор для всех девайсов"
-                width="370"
+                width="370" class="imgb"
               />
             </li>
             <li class="listofbebefits">
-              <img src="images/box3.jpg" alt="подбор цветов" width="370" />
+              <div class="benefits-overflow"><p class="pbenefits">Дизайнерские решения</p></div>
+              <img src="images/box3.jpg" alt="подбор цветов" width="370"  class="imgb"/>
             </li>
             <li class="listofbebefits">
-              <img src="images/img.jpg" alt="разработка сайтов" width="370" />
+              <div class="benefits-overflow"><p class="pbenefits">десктопные приложение</p></div>
+              <img src="images/img.jpg" alt="разработка сайтов" width="370" class="imgb"/>
             </li>
           </ul>
         </div>
@@ -470,5 +473,15 @@
           </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" > <p>авпвапав</p>
+      <button class="closemark" data-modal-close><svg class="svgclose" width="11" height="11">
+        <use
+          href="./images/symbol-defs.svg#icon-close"
+        ></use>
+      </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
