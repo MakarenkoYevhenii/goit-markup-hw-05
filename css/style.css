@@ -460,20 +460,24 @@ li,
 {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
 }
 .listprojects-item
 {
   width: 370px;
-  overflow: hidden;
+
   margin-bottom: 30px;
   margin-right: 30px;
-  box-shadow: 0px;
-  transition: box-shadow var(--animation);
+  
+  flex-basis: calc((100% - 90px) / 3);
 }
-.listprojects-item:focus,
-.listprojects-item:hover
+.projects-url:hover,
+.projects-url:active
 {
-box-shadow: 1px 4px 6px 0px var(--shadow7),0px 4px 4px 0px var(--shadow6),0px 1px 1px 0px var(--shadow3);
+/* background-color:red; */
+box-shadow: 0px 1px 1px var(--shadow3), 0px 4px 4px var(--shadow6), 1px 4px 6px var(--shadow7);
+
 }
 .listprojects-item:nth-child(3n+3)
 {
@@ -487,8 +491,9 @@ box-shadow: 1px 4px 6px 0px var(--shadow7),0px 4px 4px 0px var(--shadow6),0px 1p
 .projects-url
 {
   display: block;
+  text-decoration: none;
+  color: var(--maincolor);
   transition: box-shadow var(--animation);
-
 }
 .imgproject {
   width: 100%;
